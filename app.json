@@ -6,7 +6,6 @@
     "orientation": "portrait",
     "icon": "./assets/images/natively-dark.png",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
     "splash": {
       "image": "./assets/images/natively-dark.png",
       "resizeMode": "contain",
@@ -25,7 +24,7 @@
         "backgroundColor": "#000000"
       },
       "package": "com.DroneElite.PhotoForge",
-"googleServicesFile": "./google-services.json",
+      "googleServicesFile": "./google-services.json",
       "config": {
         "googleMaps": {
           "apiKey": "process.env.GOOGLE_MAPS_API_KEY || process.env.EXPO_PUBLIC_GOOGLE_MAPS_API_KEY"
@@ -38,20 +37,7 @@
     },
     "plugins": [
       "expo-font",
-      "expo-router",
-      "expo-web-browser",
-      [
-        "@react-native-firebase/app",
-        {
-          // Firebase configuration will be handled by google-services.json
-        }
-      ],
-      [
-        "@react-native-firebase/crashlytics",
-        {
-          // Crashlytics configuration
-        }
-      ]
+      "expo-router"
     ],
     "scheme": "photoforge",
     "experiments": {

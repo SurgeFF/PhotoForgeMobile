@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "437759120323",
+    "project_id": "gen-lang-client-0688382477",
+    "storage_bucket": "gen-lang-client-0688382477.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:437759120323:android:b6e54f926da730dd7ba376",
+        "android_client_info": {
+          "package_name": "com.droneelite.photoforgemobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "437759120323-fp195ik5srgitrg92oj4afhgap3qrnja.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9XmQkAFEVPKgWTlr8odQtzhYxY1Hahqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "437759120323-fp195ik5srgitrg92oj4afhgap3qrnja.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

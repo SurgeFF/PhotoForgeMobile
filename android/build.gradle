@@ -1,0 +1,32 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+// 1. Plugins Block MUST be at the top of the file
+
+
+buildscript {
+  repositories {
+    google()
+    mavenCentral()
+  }
+
+  dependencies {
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:3.0.6'
+        classpath 'com.google.gms:google-services:4.4.1'
+    // 2. The older classpath dependencies are still often necessary for older React Native/Expo templates
+    classpath('com.android.tools.build:gradle:8.3.0') // <-- Added a specific version (update as needed)
+    classpath('com.facebook.react:react-native-gradle-plugin')
+    classpath('org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.0') // <-- Added a specific version (update as needed)
+  }
+}
+
+allprojects {
+  repositories {
+    google()
+    mavenCentral()
+    maven { url 'https://www.jitpack.io' }
+  }
+}
+
+// 3. Removed these lines as they are legacy for modern Expo/RN projects
+// apply plugin: "expo-root-project"
+// apply plugin: "com.facebook.react.rootproject"

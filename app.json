@@ -24,7 +24,13 @@
         "foregroundImage": "./assets/images/natively-dark.png",
         "backgroundColor": "#000000"
       },
-      "package": "com.DroneElite.PhotoForge"
+      "package": "com.DroneElite.PhotoForge",
+"googleServicesFile": "./google-services.json",
+      "config": {
+        "googleMaps": {
+          "apiKey": "process.env.GOOGLE_MAPS_API_KEY || process.env.EXPO_PUBLIC_GOOGLE_MAPS_API_KEY"
+        }
+      }
     },
     "web": {
       "favicon": "./assets/images/final_quest_240x240.png",
@@ -33,7 +39,19 @@
     "plugins": [
       "expo-font",
       "expo-router",
-      "expo-web-browser"
+      "expo-web-browser",
+      [
+        "@react-native-firebase/app",
+        {
+          // Firebase configuration will be handled by google-services.json
+        }
+      ],
+      [
+        "@react-native-firebase/crashlytics",
+        {
+          // Crashlytics configuration
+        }
+      ]
     ],
     "scheme": "photoforge",
     "experiments": {
@@ -41,10 +59,10 @@
     },
     "extra": {
       "router": {},
+      "GOOGLE_MAPS_API_KEY": "process.env.GOOGLE_MAPS_API_KEY || process.env.EXPO_PUBLIC_GOOGLE_MAPS_API_KEY",
       "eas": {
         "projectId": "5455f9c3-db5d-41c6-ba30-0c8362d06fbe"
       }
     }
-  },
-  "scheme": "PhotoForge Mobile"
+  }
 }
